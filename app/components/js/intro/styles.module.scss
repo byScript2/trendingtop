@@ -1,0 +1,102 @@
+@use "../../../utilities.module" as *;
+.main {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+
+  align-items: center;
+  background-color: $bg;
+
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bg {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, cwo($b, 0.9), transparent);
+      position: absolute;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  .front {
+    z-index: 3;
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 100px;
+    align-items: center;
+    .left {
+      flex: 1;
+      height: 90vh;
+      position: relative;
+      transform: rotate(15deg) scale(0.8) translateX(-10%);
+      justify-content: center;
+      align-items: center;
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 5%;
+      gap: 20px;
+      color: $w;
+      align-items: flex-start;
+      h2 {
+        font-size: 3rem;
+        font-family: var(--bold);
+      }
+      .actions {
+        flex-direction: row;
+        a {
+          flex: 1;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    .bg {
+      &::after {
+        background: linear-gradient(to right, cwo($b, 0.9), cwo($b, 0.1));
+      }
+    }
+    .front {
+      flex-direction: column-reverse;
+      padding: 10%;
+      gap: 50px;
+      .left {
+        flex: unset;
+        height: 40vh;
+        width: 100%;
+
+        transform: rotate(-15deg) scale(0.9) translateX(0%);
+      }
+      .right {
+        flex: unset;
+        padding: 0;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

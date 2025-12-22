@@ -1,0 +1,135 @@
+@use "../../utilities.module" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  background-color: cwb($tf, -15%);
+  color: $w;
+
+  .footer {
+    display: flex;
+
+    padding: 5% 5%;
+
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    > div {
+      width: 33%;
+      display: flex;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .images {
+          display: flex;
+          mix-blend-mode: multiply;
+          width: 90px;
+          height: 90px;
+          border-radius: 12px;
+          justify-content: center;
+          position: relative;
+        }
+      }
+    }
+    .center {
+      padding-left: 5%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      p {
+        font-size: 1.5rem;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          bottom: -10%;
+          width: 50%;
+          right: 0;
+          background-color: var(--s);
+        }
+      }
+      ul {
+        list-style: circle;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 24px;
+        a {
+          transition: 0.5s;
+          &:hover {
+            color: var(--s);
+          }
+        }
+      }
+    }
+    .right {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
+      p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .copy {
+        margin-top: 30px;
+        color: var(--b);
+        background-color: $w;
+        padding: 12px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+//sm
+//sm
+//sm
+//sm
+@media screen and (max-width: 800px) {
+  .container {
+    .footer {
+      flex-direction: column;
+      padding: 10%;
+      gap: 30px;
+      > div {
+        width: 100%;
+      }
+      .left {
+        .name {
+          h2 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+      .center {
+        padding-left: 0;
+      }
+      .right {
+        p {
+          gap: 20px;
+          .icon {
+            font-size: 1.5rem;
+            color: var(--s);
+          }
+        }
+      }
+    }
+  }
+}
+@media print {
+  .container {
+    display: none;
+  }
+}

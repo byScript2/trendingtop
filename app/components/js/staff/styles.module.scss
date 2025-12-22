@@ -1,0 +1,74 @@
+@use "../../../utilities.module" as *;
+.main {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  gap: 100px;
+  padding: 5%;
+  align-items: center;
+  background-color: cwb($bg, -2%);
+  position: relative;
+
+  div {
+    display: flex;
+  }
+
+  .grid {
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .item {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 40%;
+      min-width: 30%;
+      background-color: $bg;
+      border: 1px solid cwb($bg, 10%);
+
+      transition: 0.75s;
+
+      .image {
+        position: relative;
+        height: 40vh;
+        width: 100%;
+        img {
+          object-fit: cover;
+          object-position: center 15%;
+        }
+      }
+      .text {
+        flex-direction: column;
+        gap: 10px;
+        padding: 24px;
+        .title {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $p;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 10vh 5vw;
+
+    .grid {
+      gap: 20px;
+      flex-direction: column;
+      .item {
+        max-width: 100%;
+        width: 100%;
+
+        .title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@use "sass:color";
+@mixin keyframes($action) {
+  @keyframes #{$action} {
+    @content;
+  }
+}
+@function cwo($color, $opacity) {
+  $rgbaColor: rgba($color, $opacity);
+  @return $rgbaColor;
+}
+@function cwb($color, $brightness) {
+  $ncolor: color.adjust($color, $lightness: $brightness);
+  @return $ncolor;
+}
+
+$p: #33bfe6;
+$s: #5fd3f0;
+$bg: #ffffff;
+$b: #000000;
+$w: #ffffff;
+$tf: #9ca3af;
+$a: #33bfe6;
+$grad: linear-gradient(to right, $p, $s);
+
+@mixin animate($name, $duration, $method, $delay, $loop) {
+  animation: $name $duration $method $delay $loop;
+}
+
+@include keyframes(drawLine) {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@include keyframes(scaler) {
+  0% {
+    transform: scale(0.2) rotate(35deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+@include keyframes(roller) {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@include keyframes(rollerr) {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  &::before {
+    content: "";
+    height: 4px;
+    width: 20%;
+    position: absolute;
+    bottom: 5px;
+    background-color: $s;
+  }
+}
+.underline {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  font-family: var(--bold);
+  flex-direction: column;
+  padding-bottom: 25px;
+  width: 50%;
+  text-align: center;
+  h1,
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .underline {
+    width: 100%;
+    h1,
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  @include keyframes(roller) {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-2600px);
+    }
+  }
+  @include keyframes(rollerr) {
+    0% {
+      transform: translateX(-2600px);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}

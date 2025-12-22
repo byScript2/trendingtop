@@ -1,0 +1,83 @@
+@use "../../../utilities.module" as *;
+.main {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  gap: 100px;
+  padding: 15vh 5%;
+  align-items: center;
+  background-color: cwb($bg, -5%);
+  position: relative;
+
+  div {
+    display: flex;
+  }
+
+  .grid {
+    width: 100%;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .item {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 40%;
+      min-width: 30%;
+      background-color: $bg;
+      border: 1px solid cwb($bg, 10%);
+
+      padding: 25px;
+
+      transition: 0.75s;
+      align-items: flex-start;
+      &:hover {
+        background-color: cwb($bg, -5%);
+      }
+      .icon {
+        position: relative;
+        height: 70px;
+        width: 70px;
+        background-color: $p;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        .title {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $p;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 10vh 5vw;
+
+    .grid {
+      gap: 20px;
+      flex-direction: column;
+      .item {
+        max-width: 100%;
+        width: 100%;
+        padding: 24px;
+        .title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
