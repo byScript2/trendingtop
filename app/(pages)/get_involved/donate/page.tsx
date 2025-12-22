@@ -1,17 +1,6 @@
 import { Topper, TopperType } from "@/app/components/js/carousel/Carousel";
 import styles from "../styles.module.scss";
 import Link from "next/link";
-import { FaLocationArrow, FaPhone, FaWhatsapp } from "react-icons/fa";
-import { BiMailSend } from "react-icons/bi";
-import {
-  EMAIL,
-  EMAIL2,
-  HQ,
-  TEL,
-  TEL2,
-  TEL3,
-  WHATSAPPLINK,
-} from "@/app/components/js/config";
 
 export default function Page() {
   const data: TopperType = {

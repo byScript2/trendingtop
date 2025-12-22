@@ -2,7 +2,6 @@
 
 import styles from "./styles.module.scss";
 
-import { Underline2 } from "../underline/underline";
 import { useSlideUp } from "../useslider";
 import Image from "next/image";
 
@@ -30,7 +29,6 @@ export default function Staff() {
     <div className={styles.main}>
       <div className={styles.underline}>
         <h1>{`Our Team`}</h1>
-        <Underline2 id="team" />
       </div>
       <div className={styles.grid} id="persons">
         {keys.map((e, i) => (
