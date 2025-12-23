@@ -10,6 +10,8 @@ import {
   HQ,
   TEL,
   TEL2,
+  TEL3,
+  TEL4,
 } from "@/app/components/js/config";
 
 export default function Footer() {
@@ -94,6 +96,12 @@ export default function Footer() {
           </p>
           <p>
             <FiPhoneCall className={styles.icon} /> <span>{TEL2}</span>
+          </p>
+          <p>
+            <FiPhoneCall className={styles.icon} /> <span>{TEL3}</span>
+          </p>
+          <p>
+            <FiPhoneCall className={styles.icon} /> <span>{TEL4}</span>
           </p>
           <p>
             <FiMail className={styles.icon} /> <span>{EMAIL}</span>

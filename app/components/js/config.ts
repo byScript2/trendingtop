@@ -13,9 +13,10 @@ export const COMPANYNAME = "Trending Top Empowerment Foundation";
 export const EMAIL = `info@trendingtopfoundation.org`;
 export const EMAIL2 = `oluwatobiloba.a@trendingtopfoundation.org`;
 
-export const TEL = `2348162560582`;
-export const TEL2 = `447443012033`;
-export const TEL3 = `2348126371088`;
+export const TEL = `+2348162560582`;
+export const TEL2 = `+447443012033`;
+export const TEL3 = `+2349036502518`;
+export const TEL4 = `+2347038766721`;
 export const WHATSAPPLINK = `http://wa.me/2348162560582`;
 
 export const HQ = `5 Ibrahim Alabi Street, Ogun State Nigeria`;

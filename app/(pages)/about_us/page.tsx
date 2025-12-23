@@ -30,8 +30,10 @@ export default function Page() {
         <div className={styles.top}>
           <h1>Who We Are</h1>
 
-          <p>{`Trending Top Empowerment Foundation is a community-focused humanitarian organisation committed to supporting people through seasons of difficulty and uncertainty. We work closely with children, youths, older adults, and vulnerable families, responding to real needs through outreach, welfare support, empowerment initiatives, and emotional guidance.`}</p>
-          <p>{`Since our establishment in 2019, our approach has remained people-centred and hands-on. We believe meaningful impact comes from showing up consistently, listening attentively, and providing support that restores dignity, builds confidence, and strengthens communities over time.`}</p>
+          <p>{`Trending Top Foundation, now known as Trending Top Empowerment Foundation, is a humanitarian organisation established in 2019 and registered with the Federal Government of Nigeria.`}</p>
+          <p>{`Registered with the Corporate Affairs Commission (CAC), Nigeria
+Registration Number: 9105906`}</p>
+          <p>{`We are committed to supporting individuals and communities facing everyday challenges. Our work is rooted in compassion, consistency, and a genuine desire to provide practical support that improves wellbeing and creates pathways toward stability and growth.`}</p>
         </div>
         <div className={styles.statement}>
           <div>

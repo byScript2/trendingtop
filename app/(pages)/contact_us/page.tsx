@@ -11,6 +11,7 @@ import {
   TEL,
   TEL2,
   TEL3,
+  TEL4,
   WHATSAPPLINK,
 } from "@/app/components/js/config";
 import type { Metadata } from "next";
@@ -64,6 +65,10 @@ export default function Page() {
           <Link href={`tel:${TEL3}`} className={styles.btn}>
             <FaPhone className={styles.icon} />
             <span> {`${TEL3}`}</span>
+          </Link>
+          <Link href={`tel:${TEL4}`} className={styles.btn}>
+            <FaPhone className={styles.icon} />
+            <span> {`${TEL4}`}</span>
           </Link>
         </div>
 

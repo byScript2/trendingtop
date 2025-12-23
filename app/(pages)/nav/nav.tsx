@@ -50,6 +50,11 @@ export default function Nav() {
     },
 
     {
+      text: "Gallery",
+      url: "/gallery",
+      links: [],
+    },
+    {
       text: "Contact Us",
       url: "/contact_us",
       links: [],

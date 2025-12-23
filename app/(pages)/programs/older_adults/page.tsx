@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Page() {
   const data: TopperType = {
-    img: "/assets/programs/older.jpg",
+    img: "/assets/programs/older.jpeg",
 
     text: [
       `Ensuring our seniors live with dignity, care, and the emotional support they deserve .`,

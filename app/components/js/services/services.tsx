@@ -17,13 +17,13 @@ export default function Services() {
       title: "School Outreach",
       text: "Providing learning materials, school essentials, and encouragement to help children stay motivated and focused on their education.",
       link: "/programs/school_outreach",
-      image: "/assets/programs/school.jpg",
+      image: "/assets/programs/school.jpeg",
     },
     {
       title: "Street Feeding & Welfare",
       text: "Offering food, water, clothing, and basic necessities to individuals and families facing daily hardship within communities.",
       link: "/programs/street_feeding",
-      image: "/assets/programs/feeding.jpg",
+      image: "/assets/programs/feeding.jpeg",
     },
     {
       title: "Orphanage Support",
@@ -41,7 +41,7 @@ export default function Services() {
       title: "Support for Older Adults",
       text: "Providing food, healthcare items, clothing, and emotional support to older adults who may lack consistent family care.",
       link: "/programs/older_adults",
-      image: "/assets/programs/older.jpg",
+      image: "/assets/programs/older.jpeg",
     },
     {
       title: "Emergency Support",
