@@ -1,10 +1,5 @@
 import { IconType } from "react-icons";
-import {
-  BsInstagram,
-  BsTelegram,
-  BsTwitterX,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 
@@ -24,16 +19,16 @@ export const HQ = `5 Ibrahim Alabi Street, Ogun State Nigeria`;
 export const SOCIALS: { Icon: IconType; url: string }[] = [
   {
     Icon: BsInstagram,
-    url: "http://instagram.com/gbolahun_creation",
+    url: "https://www.instagram.com/trendingtopfoundation/",
   },
   {
     Icon: BsWhatsapp,
     url: WHATSAPPLINK,
   },
-  // {
-  //   Icon: FaFacebook,
-  //   url: "http://facebook.com/gbolahuncreation",
-  // },
+  {
+    Icon: FaFacebook,
+    url: "https://web.facebook.com/people/Trending-Top-Helping-HANDS-FOudation/100071155847111/",
+  },
   // {
   //   Icon: BsTelegram,
   //   url: "https://t.me/GC1011",

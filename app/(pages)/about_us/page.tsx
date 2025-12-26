@@ -20,7 +20,10 @@ export default function Page() {
     img: "/assets/lady.jpg",
 
     text: [
-      `Trending Top Empowerment Foundation is a humanitarian organisation established in 2019 with a commitment to supporting individuals and communities facing everyday challenges. Our work is rooted in compassion, consistency, and a genuine desire to provide practical support that improves wellbeing and creates pathways toward stability and growth.`,
+      `Trending Top Foundation, now known as Trending Top Empowerment Foundation, is a humanitarian organisation established in 2019 and registered with the Federal Government of Nigeria.`,
+      `Registered with the Corporate Affairs Commission (CAC), Nigeria
+Registration Number: 9105906`,
+      `We are committed to supporting individuals and communities facing everyday challenges. Our work is rooted in compassion, consistency, and a genuine desire to provide practical support that improves wellbeing and creates pathways toward stability and growth.`,
     ],
   };
   return (
@@ -30,10 +33,51 @@ export default function Page() {
         <div className={styles.top}>
           <h1>Who We Are</h1>
 
-          <p>{`Trending Top Foundation, now known as Trending Top Empowerment Foundation, is a humanitarian organisation established in 2019 and registered with the Federal Government of Nigeria.`}</p>
-          <p>{`Registered with the Corporate Affairs Commission (CAC), Nigeria
-Registration Number: 9105906`}</p>
-          <p>{`We are committed to supporting individuals and communities facing everyday challenges. Our work is rooted in compassion, consistency, and a genuine desire to provide practical support that improves wellbeing and creates pathways toward stability and growth.`}</p>
+          <p>{`Trending Top Empowerment Foundation works directly with communities to support children, young people, and families facing everyday social and economic challenges.`}</p>
+          <p>{`Our work focuses on practical, people-centred support that improves wellbeing and creates opportunities for stability and growth.`}</p>
+          <h2>Our Focus Areas</h2>
+          <ul>
+            {[
+              {
+                title: `Child and Youth Support`,
+                text: `We support vulnerable children and young people through welfare assistance, educational support, and mentorship activities that encourage learning, confidence, and positive development.`,
+              },
+              {
+                title: `Community Welfare and Relief`,
+                text: `We provide food items, basic household support, and emergency assistance to low-income families, older people, and individuals experiencing hardship.`,
+              },
+              {
+                title: `Empowerment and Skills Development`,
+                text: `We deliver small-scale empowerment initiatives that help individuals build skills, confidence, and pathways toward self-reliance.`,
+              },
+              {
+                title: `Community Engagement and Awareness`,
+                text: `We work with local leaders and volunteers to promote inclusion, wellbeing, and shared responsibility within communities.`,
+              },
+            ].map((e, i) => (
+              <p key={i}>
+                <b>{`${i + 1}) ${e.title}`} </b>
+                <br />
+                <span>{e.text}</span>
+                <br /> <br />
+              </p>
+            ))}
+          </ul>
+          <div className={styles.statement}>
+            <div>
+              <h2>How We Work</h2>
+              <p>{`We listen first, act responsibly, and work transparently. Our programmes are designed with community input and delivered through a volunteer-supported model, ensuring resources reach those who need them most.`}</p>
+            </div>
+            <div>
+              <h2>Who We Serve</h2>
+              <ul>
+                <li>Vulnerable children and youth</li>
+                <li>{`Low-income families`}</li>
+                <li>{`Older people and underserved individuals`}</li>
+                <li>{`Local communities across Nigeria`}</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className={styles.statement}>
           <div>

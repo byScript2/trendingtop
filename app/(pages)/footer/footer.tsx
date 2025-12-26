@@ -6,7 +6,6 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import {
   COMPANYNAME,
   EMAIL,
-  EMAIL2,
   HQ,
   TEL,
   TEL2,
@@ -92,23 +91,18 @@ export default function Footer() {
             <GoLocation className={styles.icon} /> <span>{HQ}</span>
           </p>
           <p>
-            <FiPhoneCall className={styles.icon} /> <span>{TEL}</span>
+            <FiPhoneCall className={styles.icon} />{" "}
+            <span>{`${TEL}, ${TEL2}, ${TEL3}`}</span>
           </p>
+
           <p>
-            <FiPhoneCall className={styles.icon} /> <span>{TEL2}</span>
-          </p>
-          <p>
-            <FiPhoneCall className={styles.icon} /> <span>{TEL3}</span>
-          </p>
-          <p>
-            <FiPhoneCall className={styles.icon} /> <span>{TEL4}</span>
+            <FiPhoneCall className={styles.icon} />{" "}
+            <span>{`Kano State Office: ${TEL4}`}</span>
           </p>
           <p>
             <FiMail className={styles.icon} /> <span>{EMAIL}</span>
           </p>
-          <p>
-            <FiMail className={styles.icon} /> <span>{EMAIL2}</span>
-          </p>
+
           <p className={styles.copy}>
             {date.getFullYear()} © - all rights reserved
           </p>
