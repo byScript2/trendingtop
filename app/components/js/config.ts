@@ -5,7 +5,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 export const COMPANYNAME = "Trending Top Empowerment Foundation";
 
-export const EMAIL = `info@trendingtopfoundation.org`;
+export const EMAIL = `info@trendingtopfoundation.com`;
 export const EMAIL2 = `oluwatobiloba.a@trendingtopfoundation.org`;
 
 export const TEL = `+2348162560582`;
